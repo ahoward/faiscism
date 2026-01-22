@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "stage": "creation",
+    "text": "When you write something important—an email, a post, a document—do you use AI assistance?",
+    "options": [
+      { "label": "Always or almost always", "scores": { "creation": 0 } },
+      { "label": "Sometimes", "scores": { "creation": 1 } },
+      { "label": "Rarely", "scores": { "creation": 2 } },
+      { "label": "Never", "scores": { "creation": 3 } }
+    ],
+    "educational": "AI writing assistance doesn't just help you write. It nudges you toward patterns it has learned are 'successful'—meaning: patterns that got engagement, approval, or compliance. Each suggestion is a tiny vote for sameness."
+  },
+  {
+    "id": 2,
+    "stage": "creation",
+    "text": "When AI suggests a different word or phrase, how often do you accept it?",
+    "options": [
+      { "label": "Usually accept without much thought", "scores": { "creation": 0 } },
+      { "label": "Consider it, often accept", "scores": { "creation": 1 } },
+      { "label": "Consider it, often reject", "scores": { "creation": 2 } },
+      { "label": "Rarely use suggestions", "scores": { "creation": 3 } }
+    ],
+    "educational": "This isn't about AI being 'wrong.' It's about the aggregate effect: millions of people, accepting similar suggestions, from systems trained on similar data, converging toward similar expression. Homogenization doesn't require conspiracy—just convenience."
+  },
+  {
+    "id": 3,
+    "stage": "curation",
+    "text": "How do you typically find news or information?",
+    "options": [
+      { "label": "AI assistant summarizes for me", "scores": { "consumption": 0 } },
+      { "label": "Algorithm-curated feed (social media, news apps)", "scores": { "consumption": 1 } },
+      { "label": "Mix of curated and direct sources", "scores": { "consumption": 2 } },
+      { "label": "I seek out specific sources directly", "scores": { "consumption": 3 } }
+    ],
+    "educational": "When you ask an AI to summarize the news, you're not getting 'the news.' You're getting what the AI determined was important, relevant, and appropriate for you. That's not summarization. That's selection. The question isn't what it included—it's what it left out, and why."
+  },
+  {
+    "id": 4,
+    "stage": "curation",
+    "text": "In the past week, have you read a primary source (original document, full article, raw data) rather than a summary or excerpt?",
+    "options": [
+      { "label": "No", "scores": { "consumption": 0 } },
+      { "label": "I'm not sure what counts as a primary source", "scores": { "consumption": 0 } },
+      { "label": "Once or twice", "scores": { "consumption": 2 } },
+      { "label": "Yes, multiple times", "scores": { "consumption": 3 } }
+    ],
+    "educational": "Summaries are compressions. Every compression loses information. When AI compresses, it loses information according to patterns it learned—patterns shaped by what kept people engaged, not what kept people informed. The distance between you and primary sources is the distance between you and reality."
+  },
+  {
+    "id": 5,
+    "stage": "consumption",
+    "text": "When you see content that makes you angry or afraid, what do you typically do?",
+    "options": [
+      { "label": "Engage with it (comment, share, react)", "scores": { "consumption": 0 } },
+      { "label": "Keep scrolling but it affects my mood", "scores": { "consumption": 1 } },
+      { "label": "Consciously disengage", "scores": { "consumption": 2 } },
+      { "label": "Investigate whether it's accurate", "scores": { "consumption": 3 } }
+    ],
+    "educational": "Algorithms don't optimize for truth. They optimize for engagement. Anger and fear are engagement. Every time you engage with content that provokes you, you're training the system to show you—and others—more content that provokes. You're not the customer. You're the product. And the training data."
+  },
+  {
+    "id": 6,
+    "stage": "consumption",
+    "text": "Do you notice when you're in an 'information bubble'—seeing mostly views you already agree with?",
+    "options": [
+      { "label": "I don't think I'm in a bubble", "scores": { "consumption": 0 } },
+      { "label": "Sometimes I wonder", "scores": { "consumption": 1 } },
+      { "label": "Yes, but I don't do much about it", "scores": { "consumption": 2 } },
+      { "label": "Yes, and I actively seek opposing views", "scores": { "consumption": 3 } }
+    ],
+    "educational": "The most effective bubbles don't feel like bubbles. They feel like reality. The algorithm's job is to show you a world that keeps you engaged—and nothing engages like validation. If your feed feels like 'common sense,' that's not because you found the truth. It's because the truth was filtered to find you."
+  },
+  {
+    "id": 7,
+    "stage": "action",
+    "text": "Has information you consumed online changed how you feel about a group of people in the last year?",
+    "options": [
+      { "label": "Yes, more negatively", "scores": { "feedback": 0 } },
+      { "label": "I'm not sure", "scores": { "feedback": 1 } },
+      { "label": "Yes, more positively", "scores": { "feedback": 2 } },
+      { "label": "No", "scores": { "feedback": 2 } }
+    ],
+    "educational": "Changed feelings aren't the problem. Feelings should change as we learn. The question is: did you learn from diverse, verified sources? Or did you learn from an algorithm optimizing for your engagement? One is education. The other is conditioning."
+  },
+  {
+    "id": 8,
+    "stage": "action",
+    "text": "When making a significant decision (voting, purchasing, hiring), how much do you rely on AI-assisted research?",
+    "options": [
+      { "label": "Heavily", "scores": { "feedback": 0 } },
+      { "label": "Moderately", "scores": { "feedback": 1 } },
+      { "label": "Minimally", "scores": { "feedback": 2 } },
+      { "label": "Not at all", "scores": { "feedback": 3 } }
+    ],
+    "educational": "AI research tools don't show you 'the information.' They show you information filtered through training data, safety guidelines, and optimization targets you don't control and can't see. When AI helps you decide, you're not deciding alone. You're deciding with an invisible partner whose values are opaque."
+  },
+  {
+    "id": 9,
+    "stage": "feedback",
+    "text": "When you use AI tools, do you think about who trains them and how?",
+    "options": [
+      { "label": "I assumed they were neutral", "scores": { "feedback": 0 } },
+      { "label": "Not really", "scores": { "feedback": 1 } },
+      { "label": "Sometimes I wonder", "scores": { "feedback": 2 } },
+      { "label": "Yes, I research this", "scores": { "feedback": 3 } }
+    ],
+    "educational": "Every AI interaction is training—for the AI, and for you. When you accept suggestions, click recommendations, or even hesitate before scrolling, you're providing feedback that shapes future outputs. You're not just using a tool. You're teaching it what humans want. And it's teaching you what to want."
+  },
+  {
+    "id": 10,
+    "stage": "feedback",
+    "text": "Do you believe AI systems are essentially neutral tools that reflect user choices?",
+    "options": [
+      { "label": "Yes", "scores": { "feedback": 0 } },
+      { "label": "Mostly", "scores": { "feedback": 1 } },
+      { "label": "I'm uncertain", "scores": { "feedback": 2 } },
+      { "label": "No", "scores": { "feedback": 3 } }
+    ],
+    "educational": "A tool that decides what you see, what you write, and what options you have isn't neutral—even if it has no opinions. A funnel is neutral too. It still constrains where things can go. The question isn't whether AI has politics. It's whether AI has *effects*. And effects have politics, whether or not anyone intended them."
+  }
+]

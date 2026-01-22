@@ -1,0 +1,20 @@
+---
+layout: base.njk
+title: Home
+---
+<div class="landing">
+  <h1 class="site-title">{{ site.title }}</h1>
+  <p class="tagline">{{ site.tagline }}</p>
+
+  <nav class="paths">
+    {% for key, path in paths %}
+    <a href="/{{ path.id }}/" class="path-card">
+      <div class="path-name">{{ path.name }}</div>
+      <div class="path-hook">{{ path.hook }}</div>
+      <div class="path-duration">{{ path.duration }}</div>
+    </a>
+    {% endfor %}
+  </nav>
+
+  <p class="opening-statement">{{ site.openingStatement }}</p>
+</div>

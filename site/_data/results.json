@@ -1,0 +1,49 @@
+{
+  "types": {
+    "sleepwalker": {
+      "name": "The Sleepwalker",
+      "summary": "Uses AI heavily, trusts implicitly, hasn't considered systemic effects.",
+      "description": "The chain is mostly invisible to you. This isn't a failure—it's by design. The system works best when it feels like nothing at all.",
+      "hook": "I took the mirror test. I'm a Sleepwalker. Are you?"
+    },
+    "skeptic": {
+      "name": "The Skeptic",
+      "summary": "Distrusts AI, avoids it, may not understand structural dynamics.",
+      "description": "Your distrust protects you from some effects, but the system doesn't require your participation to shape your world. The question is whether avoidance is enough.",
+      "hook": "I took the mirror test. I'm a Skeptic. Are you?"
+    },
+    "participant": {
+      "name": "The Participant",
+      "summary": "Uses thoughtfully, sees patterns, participates anyway.",
+      "description": "You see some of the machinery but use it regardless—because the alternatives feel impossible, or the benefits feel worth the cost. This is the most common position, and the most conflicted.",
+      "hook": "I took the mirror test. I'm a Participant. Are you?"
+    },
+    "architect": {
+      "name": "The Architect",
+      "summary": "Works in/on AI, understands mechanics, may feel conflicted.",
+      "description": "You build or maintain the systems others use. You understand the mechanics intimately—which makes the ethical weight heavier, not lighter.",
+      "hook": "I took the mirror test. I'm an Architect. Are you?"
+    },
+    "witness": {
+      "name": "The Witness",
+      "summary": "Sees patterns clearly, struggles with action.",
+      "description": "You see the inversions. The mirror is cracked for you, and you can see through it. But seeing through it while still using it is its own kind of tension. What do you do with what you see?",
+      "hook": "I took the mirror test. I'm a Witness. Are you?"
+    },
+    "resister": {
+      "name": "The Resister",
+      "summary": "Actively minimizes AI, seeks alternatives, accepts friction.",
+      "description": "You've chosen friction over convenience, alternatives over defaults. This costs you something. The question is whether individual resistance can counter systemic momentum.",
+      "hook": "I took the mirror test. I'm a Resister. Are you?"
+    }
+  },
+  "levels": ["low", "medium", "high"],
+  "thresholds": {
+    "sleepwalker": 0.25,
+    "skeptic": 0.4,
+    "participant": 0.55,
+    "architect": 0.7,
+    "witness": 0.85,
+    "resister": 1.0
+  }
+}

@@ -1,0 +1,18 @@
+---
+pagination:
+  data: pillars_questions
+  size: 1
+  alias: question
+permalink: "/pillars/{{ question.id }}/"
+layout: question.njk
+---
+{% set pathId = "pillars" %}
+{% set pathName = "The Five Pillars" %}
+{% set questionNum = question.id %}
+{% set totalQuestions = pillars_questions | length %}
+{% set questionText = question.text %}
+{% set options = question.options %}
+{% set educational = question.educational %}
+{% set context = question.context %}
+{% set pillarName = question.pillarName %}
+{% set isLast = question.id == totalQuestions %}

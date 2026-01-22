@@ -1,0 +1,51 @@
+---
+layout: base.njk
+---
+<article class="question-page" data-path="{{ pathId }}" data-question="{{ questionNum }}">
+  <header class="question-header">
+    <div class="path-name">{{ pathName }}</div>
+    <div class="question-count">{{ questionNum }} / {{ totalQuestions }}</div>
+  </header>
+
+  {% if context %}
+  <aside class="context">
+    <p>{{ context }}</p>
+  </aside>
+  {% endif %}
+
+  {% if pillarName %}
+  <div class="pillar-label">{{ pillarName }}</div>
+  {% endif %}
+
+  {% if pairName %}
+  <div class="pair-label">{{ pairName }}</div>
+  {% endif %}
+
+  <h1 class="question-text">{{ questionText }}</h1>
+
+  <form class="options" id="question-form">
+    {% for option in options %}
+    <label class="option">
+      <input type="radio" name="answer" value="{{ loop.index0 }}" data-scores='{{ option.scores | dump | safe }}'>
+      <span class="option-text">{{ option.label }}</span>
+    </label>
+    {% endfor %}
+  </form>
+
+  <button class="continue-btn" id="continue-btn" disabled>Continue</button>
+</article>
+
+{% if educational or inversion %}
+<aside class="educational-panel" id="educational-panel" hidden>
+  <div class="educational-content">
+    {{ educational or inversion | safe }}
+  </div>
+  <button class="next-btn" id="next-btn">
+    {% if isLast %}
+      See Results
+    {% else %}
+      Next Question
+    {% endif %}
+  </button>
+</aside>
+{% endif %}

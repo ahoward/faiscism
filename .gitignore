@@ -45,3 +45,8 @@ env/
 *.zip
 sdd-*/
 .envrc
+
+# 11ty
+_site/
+node_modules/
+package-lock.json

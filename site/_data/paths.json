@@ -1,0 +1,38 @@
+{
+  "chain": {
+    "id": "chain",
+    "name": "The Amplification Chain",
+    "hook": "Where does your content go?",
+    "duration": "5-7 min",
+    "description": "Traces your digital footprint through creation, curation, consumption, action, and feedback.",
+    "dimensions": [
+      { "id": "creation", "name": "Creation Independence" },
+      { "id": "consumption", "name": "Consumption Awareness" },
+      { "id": "feedback", "name": "Feedback Consciousness" }
+    ]
+  },
+  "pillars": {
+    "id": "pillars",
+    "name": "The Five Pillars",
+    "hook": "What does history teach us?",
+    "duration": "8-10 min",
+    "description": "Maps historical fascist mechanisms to their modern technological equivalents.",
+    "dimensions": [
+      { "id": "pattern", "name": "Historical Pattern Recognition" },
+      { "id": "structural", "name": "Structural Awareness" },
+      { "id": "centralization", "name": "Centralization Concern" }
+    ]
+  },
+  "mirror": {
+    "id": "mirror",
+    "name": "The Inverse Mirror",
+    "hook": "What aren't you seeing?",
+    "duration": "5-7 min",
+    "description": "Reveals the gap between what you perceive and what the system is actually doing.",
+    "dimensions": [
+      { "id": "filtering", "name": "Visibility of Filtering" },
+      { "id": "agency", "name": "Agency vs. Architecture" },
+      { "id": "systemic", "name": "Individual vs. Systemic Thinking" }
+    ]
+  }
+}

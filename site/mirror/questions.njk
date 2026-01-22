@@ -1,0 +1,17 @@
+---
+pagination:
+  data: mirror_questions
+  size: 1
+  alias: question
+permalink: "/mirror/{{ question.id }}/"
+layout: question.njk
+---
+{% set pathId = "mirror" %}
+{% set pathName = "The Inverse Mirror" %}
+{% set questionNum = question.id %}
+{% set totalQuestions = mirror_questions | length %}
+{% set questionText = question.text %}
+{% set options = question.options %}
+{% set educational = question.inversion %}
+{% set pairName = question.pairName %}
+{% set isLast = question.id == totalQuestions %}

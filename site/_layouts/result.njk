@@ -1,0 +1,48 @@
+---
+layout: base.njk
+---
+<article class="result-page" data-path="{{ pathId }}" data-code="{{ resultCode }}">
+  <header class="result-header">
+    <div class="path-name">{{ pathName }}</div>
+    <div class="result-label">Your Result</div>
+  </header>
+
+  <h1 class="result-type">{{ resultName }}</h1>
+
+  <p class="result-summary">{{ resultSummary }}</p>
+
+  <div class="result-description">
+    {{ resultDescription | safe }}
+  </div>
+
+  <div class="dimensions">
+    <h2>Your Profile</h2>
+    {% for dim in dimensions %}
+    <div class="dimension">
+      <span class="dimension-name">{{ dim.name }}</span>
+      <span class="dimension-level dimension-{{ dim.level }}">{{ dim.level }}</span>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="share-section">
+    <h2>Share</h2>
+    <p class="share-hook">"{{ shareHook }}"</p>
+    <div class="share-buttons">
+      <button class="share-btn" data-action="copy">Copy Link</button>
+      <a class="share-btn" href="https://twitter.com/intent/tweet?text={{ shareHook | urlencode }}&url={{ site.url }}{{ page.url | urlencode }}" target="_blank" rel="noopener">Twitter</a>
+    </div>
+  </div>
+
+  <nav class="result-nav">
+    <a href="/" class="nav-link">← Home</a>
+    {% if not completedAll %}
+    <span class="nav-prompt">Try another path?</span>
+    <div class="other-paths">
+      {% for p in otherPaths %}
+      <a href="/{{ p.id }}/" class="path-link">{{ p.name }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </nav>
+</article>

@@ -1,0 +1,25 @@
+{
+  "name": "faiscism",
+  "version": "1.0.0",
+  "description": "Educational decision-tree exploring AI, technology, and fascism",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "build:prod": "ELEVENTY_ENV=production eleventy",
+    "debug": "DEBUG=Eleventy* eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahoward/faiscism.git"
+  },
+  "keywords": ["ai", "fascism", "education", "decision-tree"],
+  "author": "ahoward",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahoward/faiscism/issues"
+  },
+  "homepage": "https://github.com/ahoward/faiscism#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
