@@ -8,7 +8,7 @@ title: Home
 
   <nav class="paths">
     {% for key, path in paths %}
-    <a href="/{{ path.id }}/" class="path-card">
+    <a href="{{ path.id }}/" class="path-card">
       <div class="path-name">{{ path.name }}</div>
       <div class="path-hook">{{ path.hook }}</div>
       <div class="path-duration">{{ path.duration }}</div>

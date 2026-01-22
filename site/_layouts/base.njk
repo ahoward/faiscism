@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/faiscism/">
   <title>{% if resultName %}{{ resultName }} | {{ pathName }} | {% elif title %}{{ title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ resultSummary | default(description) | default(site.description) }}">
 
@@ -20,12 +21,12 @@
   <meta name="twitter:title" content="{{ resultName | default(ogTitle) | default(title) | default(site.title) }}">
   <meta name="twitter:description" content="{{ shareHook | default(ogDescription) | default(description) | default(site.description) }}">
 
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <main>
     {{ content | safe }}
   </main>
-  <script src="/js/quiz.js"></script>
+  <script src="js/quiz.js"></script>
 </body>
 </html>

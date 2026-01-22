@@ -124,11 +124,11 @@
     function navigateNext() {
       if (questionNum < totalQuestions) {
         // Go to next question
-        window.location.href = `/${pathId}/${questionNum + 1}/`;
+        window.location.href = `${pathId}/${questionNum + 1}/`;
       } else {
         // Calculate result and go to result page
         const resultCode = calculateResultCode(pathId);
-        window.location.href = `/${pathId}/result/${resultCode}/`;
+        window.location.href = `${pathId}/result/${resultCode}/`;
       }
     }
   }
@@ -166,7 +166,7 @@
     paths.forEach(pathId => {
       const pathState = state[pathId];
       if (pathState && pathState.answers && pathState.answers.length > 0) {
-        const card = document.querySelector(`[href="/${pathId}/"]`);
+        const card = document.querySelector(`[href="${pathId}/"]`);
         if (card) {
           const progress = pathState.answers.filter(a => a !== undefined).length;
           if (progress < 10) {
@@ -198,7 +198,7 @@
       const nav = startPage.querySelector('.start-nav');
       if (nav) {
         const continueBtn = document.createElement('a');
-        continueBtn.href = `/${pathId}/${progress + 1}/`;
+        continueBtn.href = `${pathId}/${progress + 1}/`;
         continueBtn.className = 'btn continue';
         continueBtn.textContent = `Continue (${progress}/10)`;
         nav.prepend(continueBtn);
@@ -208,7 +208,7 @@
         restartBtn.textContent = 'Start Over';
         restartBtn.addEventListener('click', () => {
           clearPathState(pathId);
-          window.location.href = `/${pathId}/1/`;
+          window.location.href = `${pathId}/1/`;
         });
         nav.appendChild(restartBtn);
       }

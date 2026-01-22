@@ -35,12 +35,12 @@ layout: base.njk
   </div>
 
   <nav class="result-nav">
-    <a href="/" class="nav-link">← Home</a>
+    <a href="./" class="nav-link">← Home</a>
     {% if not completedAll %}
     <span class="nav-prompt">Try another path?</span>
     <div class="other-paths">
       {% for p in otherPaths %}
-      <a href="/{{ p.id }}/" class="path-link">{{ p.name }}</a>
+      <a href="{{ p.id }}/" class="path-link">{{ p.name }}</a>
       {% endfor %}
     </div>
     {% endif %}
