@@ -50,3 +50,5 @@ sdd-*/
 _site/
 node_modules/
 package-lock.json
+
+# Note: docs/ is NOT ignored - it contains the built site for GitHub Pages

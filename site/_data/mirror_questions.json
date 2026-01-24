@@ -10,7 +10,8 @@
       { "label": "All of the above", "scores": { "filtering": 2 } },
       { "label": "The AI is shaping my output / I'm training the AI", "scores": { "filtering": 3 } }
     ],
-    "inversion": null
+    "inversion": null,
+    "quote": null
   },
   {
     "id": 2,
@@ -23,7 +24,12 @@
       { "label": "Slightly uneasy", "scores": { "filtering": 2 } },
       { "label": "Concerned", "scores": { "filtering": 3 } }
     ],
-    "inversion": "When you use AI, you're also: generating training data, providing feedback on outputs, normalizing the tool's patterns, creating dependency, and accepting its constraints as defaults. The question isn't whether these are bad. It's whether you noticed them.\n\nAn AI that predicts you well has modeled you well. That model exists on someone else's server, informs someone else's business decisions, and nudges you toward predictable patterns because predictable users are valuable users. 'Personalization' and 'control' are the same mechanism, described from different positions."
+    "inversion": [
+      { "setup": "When you use AI, you're also: generating training data, providing feedback on outputs, normalizing the tool's patterns, creating dependency, and accepting its constraints as defaults. The question isn't whether these are bad. It's whether you noticed them.\n\nAn AI that predicts you well has modeled you well. That model exists on someone else's server, informs someone else's business decisions, and nudges you toward predictable patterns because predictable users are valuable users." },
+      { "emoji": "🎣🪤" },
+      { "punchline": "'Personalization' and 'control' are the same mechanism, described from different positions." }
+    ],
+    "quote": "Nothing was your own except the few cubic centimetres inside your skull."
   },
   {
     "id": 3,
@@ -36,7 +42,8 @@
       { "label": "A mix of both", "scores": { "filtering": 2 } },
       { "label": "The algorithm's predictions", "scores": { "filtering": 3 } }
     ],
-    "inversion": null
+    "inversion": null,
+    "quote": null
   },
   {
     "id": 4,
@@ -49,7 +56,12 @@
       { "label": "Yes, occasionally", "scores": { "filtering": 2 } },
       { "label": "Yes, regularly", "scores": { "filtering": 3 } }
     ],
-    "inversion": "What you see is the result of billions of micro-decisions by an optimization system. But there's a much larger set of things you *don't* see—filtered out because they wouldn't engage you, weren't 'safe,' or came from sources without sufficient reach. The feed isn't a window. It's a wall with carefully chosen holes.\n\nThe design makes it nearly impossible to see what you're not seeing. There's no 'filtered' folder. No transparency report. The absence is invisible by design. Not because anyone is hiding something—but because showing you what you're missing would reduce engagement. The system optimizes for satisfaction, not completeness."
+    "inversion": [
+      { "setup": "What you see is the result of billions of micro-decisions by an optimization system. But there's a much larger set of things you don't see—filtered out because they wouldn't engage you, weren't 'safe,' or came from sources without sufficient reach.\n\nThe design makes it nearly impossible to see what you're not seeing. There's no 'filtered' folder. No transparency report. The absence is invisible by design. Not because anyone is hiding something—but because showing you what you're missing would reduce engagement. The system optimizes for satisfaction, not completeness." },
+      { "emoji": "🧱👀" },
+      { "punchline": "The feed isn't a window. It's a wall with carefully chosen holes." }
+    ],
+    "quote": "The best books are those that tell you what you know already."
   },
   {
     "id": 5,
@@ -62,7 +74,8 @@
       { "label": "Significantly shaped by what I'm shown", "scores": { "agency": 2 } },
       { "label": "I'm not sure anymore", "scores": { "agency": 3 } }
     ],
-    "inversion": null
+    "inversion": null,
+    "quote": null
   },
   {
     "id": 6,
@@ -75,7 +88,12 @@
       { "label": "Somewhere in between", "scores": { "agency": 2 } },
       { "label": "Suggestion—I consider many options", "scores": { "agency": 3 } }
     ],
-    "inversion": "Choice architecture is a well-studied field. The options you see, the order they appear, the defaults that are pre-selected—all of these shape choices more than conscious deliberation. AI supercharges this: it learns *which* architectures work on *you*. Your choices are still yours. But the menu was written for you, personally, by a system that knows what you'll order.\n\nDefaults are powerful. Most people accept defaults. AI recommendations are framed as 'suggestions,' but they function as defaults: they're the easiest path, and deviation requires effort. Over time, the path of least resistance becomes the only path you remember exists."
+    "inversion": [
+      { "setup": "Choice architecture is a well-studied field. The options you see, the order they appear, the defaults that are pre-selected—all of these shape choices more than conscious deliberation. AI supercharges this: it learns which architectures work on you.\n\nDefaults are powerful. Most people accept defaults. AI recommendations are framed as 'suggestions,' but they function as defaults: they're the easiest path, and deviation requires effort. Over time, the path of least resistance becomes the only path you remember exists." },
+      { "emoji": "🍽️🔮" },
+      { "punchline": "Your choices are still yours. But the menu was written for you, personally, by a system that knows what you'll order." }
+    ],
+    "quote": "In the end the Party would announce that two and two made five, and you would have to believe it."
   },
   {
     "id": 7,
@@ -88,7 +106,8 @@
       { "label": "They try to be neutral but have some bias", "scores": { "agency": 2 } },
       { "label": "They have significant embedded values", "scores": { "agency": 3 } }
     ],
-    "inversion": null
+    "inversion": null,
+    "quote": null
   },
   {
     "id": 8,
@@ -101,7 +120,12 @@
       { "label": "A mix of safety and corporate decisions", "scores": { "agency": 2 } },
       { "label": "Value judgments I didn't ask for", "scores": { "agency": 3 } }
     ],
-    "inversion": "Every choice in AI design is a value choice. What data to train on. What outputs to discourage. How to handle controversy. What 'helpful' means. What 'harmful' means. The engineers making these choices are humans with worldviews. 'Neutrality' isn't absence of values—it's *invisibility* of values. The tool feels neutral because you can't see the choices that made it.\n\nAI 'safety' is a set of decisions about what should and shouldn't be easy to do or say. Some of these decisions you'd agree with. Some you wouldn't—if you knew about them. The boundaries aren't laws of nature. They're policies, set by companies, enforced by code, invisible until you bump into them. And the enforcement is quiet: not a block, but a nudge away from certain thoughts."
+    "inversion": [
+      { "setup": "Every choice in AI design is a value choice. What data to train on. What outputs to discourage. How to handle controversy. What 'helpful' means. What 'harmful' means. The engineers making these choices are humans with worldviews.\n\nAI 'safety' is a set of decisions about what should and shouldn't be easy to do or say. Some of these decisions you'd agree with. Some you wouldn't—if you knew about them. The boundaries aren't laws of nature. They're policies, set by companies, enforced by code, invisible until you bump into them. And the enforcement is quiet: not a block, but a nudge away from certain thoughts." },
+      { "emoji": "🎭⚖️" },
+      { "punchline": "'Neutrality' isn't absence of values—it's invisibility of values." }
+    ],
+    "quote": "It was not by making yourself heard but by staying sane that you carried on the human heritage."
   },
   {
     "id": 9,
@@ -114,7 +138,8 @@
       { "label": "I'm part of a larger pattern but can't change it", "scores": { "systemic": 2 } },
       { "label": "My usage contributes to systemic effects", "scores": { "systemic": 3 } }
     ],
-    "inversion": null
+    "inversion": null,
+    "quote": null
   },
   {
     "id": 10,
@@ -127,6 +152,11 @@
       { "label": "A more homogenized, filtered world", "scores": { "systemic": 2 } },
       { "label": "A more surveilled, controlled world", "scores": { "systemic": 3 } }
     ],
-    "inversion": "Individual choices aggregate. This is the hardest thing to see, and the easiest to dismiss. 'I'm just one person.' But AI systems learn from millions of 'just one person' interactions. Your acceptance of a suggestion, your engagement with content, your willingness to let AI handle a task—each one is a vote in a system that's always holding elections.\n\nThis is the question. Not 'is AI bad' but 'what does AI at scale do to thought, expression, and power?' The answer isn't predetermined. But it depends on millions of people asking the question. The greatest success of these systems would be making the question feel irrelevant—just the way things are, nothing to see here, too convenient to question."
+    "inversion": [
+      { "setup": "Individual choices aggregate. This is the hardest thing to see, and the easiest to dismiss. 'I'm just one person.' But AI systems learn from millions of 'just one person' interactions. Your acceptance of a suggestion, your engagement with content, your willingness to let AI handle a task—each one is a vote in a system that's always holding elections.\n\nThis is the question. Not 'is AI bad' but 'what does AI at scale do to thought, expression, and power?' The answer isn't predetermined. But it depends on millions of people asking the question." },
+      { "emoji": "🚬☠️" },
+      { "punchline": "The greatest success of these systems would be making the question feel irrelevant—just the way things are, nothing to see here, too convenient to question." }
+    ],
+    "quote": "We shall meet in the place where there is no darkness."
   }
 ]

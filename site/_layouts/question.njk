@@ -9,7 +9,9 @@ layout: base.njk
 
   {% if context %}
   <aside class="context">
-    <p>{{ context }}</p>
+    {% for part in context %}{% if part.setup %}<p class="setup">{{ part.setup }}</p>{% endif %}{% endfor %}
+    {% for part in context %}{% if part.punchline %}<p class="punchline">{{ part.punchline }}</p>{% endif %}{% endfor %}
+    {% for part in context %}{% if part.emoji %}<p class="emoji">{{ part.emoji }}</p>{% endif %}{% endfor %}
   </aside>
   {% endif %}
 
@@ -31,20 +33,21 @@ layout: base.njk
     </label>
     {% endfor %}
   </form>
-
-  <button class="continue-btn" id="continue-btn" disabled>Continue</button>
 </article>
 
-{% if educational or inversion %}
+{% if reveal %}
 <aside class="educational-panel" id="educational-panel" hidden>
   <div class="educational-content">
-    {{ educational or inversion | safe }}
+    {% for part in reveal %}{% if part.setup %}<p class="setup">{{ part.setup }}</p>{% endif %}{% endfor %}
+    {% for part in reveal %}{% if part.punchline %}<p class="punchline">{{ part.punchline }}</p>{% endif %}{% endfor %}
+    {% for part in reveal %}{% if part.emoji %}<p class="emoji">{{ part.emoji }}</p>{% endif %}{% endfor %}
   </div>
-  <button class="next-btn" id="next-btn">
+  <button class="next-btn" id="next-btn" type="button">
     {% if isLast %}
       See Results
     {% else %}
-      Next Question
+      <span class="quote">"{{ quote }}" — <em>1984</em></span>
+      <span class="arrow">(next) &rarr;</span>
     {% endif %}
   </button>
 </aside>

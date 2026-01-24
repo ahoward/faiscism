@@ -9,7 +9,12 @@
       { "label": "Rarely", "scores": { "creation": 2 } },
       { "label": "Never", "scores": { "creation": 3 } }
     ],
-    "educational": "AI writing assistance doesn't just help you write. It nudges you toward patterns it has learned are 'successful'—meaning: patterns that got engagement, approval, or compliance. Each suggestion is a tiny vote for sameness."
+    "reveal": [
+      { "setup": "AI writing assistance doesn't just help you write. It nudges you toward patterns it has learned are 'successful'—meaning: patterns that got engagement, approval, or compliance." },
+      { "emoji": "🔫🤖" },
+      { "punchline": "Each suggestion is a tiny vote for sameness." }
+    ],
+    "quote": "Don't you see that the whole aim of Newspeak is to narrow the range of thought?"
   },
   {
     "id": 2,
@@ -21,7 +26,12 @@
       { "label": "Consider it, often reject", "scores": { "creation": 2 } },
       { "label": "Rarely use suggestions", "scores": { "creation": 3 } }
     ],
-    "educational": "This isn't about AI being 'wrong.' It's about the aggregate effect: millions of people, accepting similar suggestions, from systems trained on similar data, converging toward similar expression. Homogenization doesn't require conspiracy—just convenience."
+    "reveal": [
+      { "setup": "This isn't about AI being 'wrong.' It's about the aggregate effect: millions of people, accepting similar suggestions, from systems trained on similar data, converging toward similar expression." },
+      { "emoji": "📺💀" },
+      { "punchline": "Homogenization doesn't require conspiracy—just convenience." }
+    ],
+    "quote": "Orthodoxy means not thinking—not needing to think. Orthodoxy is unconsciousness."
   },
   {
     "id": 3,
@@ -33,7 +43,12 @@
       { "label": "Mix of curated and direct sources", "scores": { "consumption": 2 } },
       { "label": "I seek out specific sources directly", "scores": { "consumption": 3 } }
     ],
-    "educational": "When you ask an AI to summarize the news, you're not getting 'the news.' You're getting what the AI determined was important, relevant, and appropriate for you. That's not summarization. That's selection. The question isn't what it included—it's what it left out, and why."
+    "reveal": [
+      { "setup": "When you ask an AI to summarize the news, you're not getting 'the news.' You're getting what the AI determined was important, relevant, and appropriate for you. That's not summarization. That's selection." },
+      { "emoji": "✂️🙈" },
+      { "punchline": "The question isn't what it included—it's what it left out, and why." }
+    ],
+    "quote": "Who controls the past controls the future. Who controls the present controls the past."
   },
   {
     "id": 4,
@@ -45,7 +60,12 @@
       { "label": "Once or twice", "scores": { "consumption": 2 } },
       { "label": "Yes, multiple times", "scores": { "consumption": 3 } }
     ],
-    "educational": "Summaries are compressions. Every compression loses information. When AI compresses, it loses information according to patterns it learned—patterns shaped by what kept people engaged, not what kept people informed. The distance between you and primary sources is the distance between you and reality."
+    "reveal": [
+      { "setup": "Summaries are compressions. Every compression loses information. When AI compresses, it loses information according to patterns it learned—patterns shaped by what kept people engaged, not what kept people informed." },
+      { "emoji": "💣🕳️" },
+      { "punchline": "The distance between you and primary sources is the distance between you and reality." }
+    ],
+    "quote": "The past was erased, the erasure was forgotten, the lie became the truth."
   },
   {
     "id": 5,
@@ -57,7 +77,12 @@
       { "label": "Consciously disengage", "scores": { "consumption": 2 } },
       { "label": "Investigate whether it's accurate", "scores": { "consumption": 3 } }
     ],
-    "educational": "Algorithms don't optimize for truth. They optimize for engagement. Anger and fear are engagement. Every time you engage with content that provokes you, you're training the system to show you—and others—more content that provokes. You're not the customer. You're the product. And the training data."
+    "reveal": [
+      { "setup": "Algorithms don't optimize for truth. They optimize for engagement. Anger and fear are engagement. Every time you engage with content that provokes you, you're training the system to show you—and others—more content that provokes." },
+      { "emoji": "🐀🧪" },
+      { "punchline": "You're not the customer. You're the product. And the training data." }
+    ],
+    "quote": "The Party told you to reject the evidence of your eyes and ears. It was their final, most essential command."
   },
   {
     "id": 6,
@@ -69,7 +94,12 @@
       { "label": "Yes, but I don't do much about it", "scores": { "consumption": 2 } },
       { "label": "Yes, and I actively seek opposing views", "scores": { "consumption": 3 } }
     ],
-    "educational": "The most effective bubbles don't feel like bubbles. They feel like reality. The algorithm's job is to show you a world that keeps you engaged—and nothing engages like validation. If your feed feels like 'common sense,' that's not because you found the truth. It's because the truth was filtered to find you."
+    "reveal": [
+      { "setup": "The most effective bubbles don't feel like bubbles. They feel like reality. The algorithm's job is to show you a world that keeps you engaged—and nothing engages like validation." },
+      { "emoji": "🫧🔪" },
+      { "punchline": "If your feed feels like 'common sense,' that's not because you found the truth. It's because the truth was filtered to find you." }
+    ],
+    "quote": "Until they become conscious they will never rebel, and until after they have rebelled they cannot become conscious."
   },
   {
     "id": 7,
@@ -81,7 +111,12 @@
       { "label": "Yes, more positively", "scores": { "feedback": 2 } },
       { "label": "No", "scores": { "feedback": 2 } }
     ],
-    "educational": "Changed feelings aren't the problem. Feelings should change as we learn. The question is: did you learn from diverse, verified sources? Or did you learn from an algorithm optimizing for your engagement? One is education. The other is conditioning."
+    "reveal": [
+      { "setup": "Changed feelings aren't the problem. Feelings should change as we learn. The question is: did you learn from diverse, verified sources? Or did you learn from an algorithm optimizing for your engagement?" },
+      { "emoji": "🧠⛓️" },
+      { "punchline": "One is education. The other is conditioning." }
+    ],
+    "quote": "The object of persecution is persecution. The object of torture is torture. The object of power is power."
   },
   {
     "id": 8,
@@ -93,7 +128,12 @@
       { "label": "Minimally", "scores": { "feedback": 2 } },
       { "label": "Not at all", "scores": { "feedback": 3 } }
     ],
-    "educational": "AI research tools don't show you 'the information.' They show you information filtered through training data, safety guidelines, and optimization targets you don't control and can't see. When AI helps you decide, you're not deciding alone. You're deciding with an invisible partner whose values are opaque."
+    "reveal": [
+      { "setup": "AI research tools don't show you 'the information.' They show you information filtered through training data, safety guidelines, and optimization targets you don't control and can't see." },
+      { "emoji": "👁️‍🗨️🎭" },
+      { "punchline": "You're deciding with an invisible partner whose values are opaque." }
+    ],
+    "quote": "Power is in tearing human minds to pieces and putting them together again in new shapes of your own choosing."
   },
   {
     "id": 9,
@@ -105,7 +145,12 @@
       { "label": "Sometimes I wonder", "scores": { "feedback": 2 } },
       { "label": "Yes, I research this", "scores": { "feedback": 3 } }
     ],
-    "educational": "Every AI interaction is training—for the AI, and for you. When you accept suggestions, click recommendations, or even hesitate before scrolling, you're providing feedback that shapes future outputs. You're not just using a tool. You're teaching it what humans want. And it's teaching you what to want."
+    "reveal": [
+      { "setup": "Every AI interaction is training—for the AI, and for you. When you accept suggestions, click recommendations, or even hesitate before scrolling, you're providing feedback that shapes future outputs. You're not just using a tool." },
+      { "emoji": "🪞💉" },
+      { "punchline": "You're teaching it what humans want. And it's teaching you what to want." }
+    ],
+    "quote": "You will be hollow. We shall squeeze you empty, and then we shall fill you with ourselves."
   },
   {
     "id": 10,
@@ -117,6 +162,11 @@
       { "label": "I'm uncertain", "scores": { "feedback": 2 } },
       { "label": "No", "scores": { "feedback": 3 } }
     ],
-    "educational": "A tool that decides what you see, what you write, and what options you have isn't neutral—even if it has no opinions. A funnel is neutral too. It still constrains where things can go. The question isn't whether AI has politics. It's whether AI has *effects*. And effects have politics, whether or not anyone intended them."
+    "reveal": [
+      { "setup": "A tool that decides what you see, what you write, and what options you have isn't neutral—even if it has no opinions. A funnel is neutral too. It still constrains where things can go." },
+      { "emoji": "⚰️🗳️" },
+      { "punchline": "The question isn't whether AI has politics. It's whether AI has effects. And effects have politics, whether or not anyone intended them." }
+    ],
+    "quote": "Freedom is the freedom to say that two plus two make four. If that is granted, all else follows."
   }
 ]

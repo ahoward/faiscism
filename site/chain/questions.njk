@@ -6,12 +6,3 @@ pagination:
 permalink: "/chain/{{ question.id }}/"
 layout: question.njk
 ---
-{% set pathId = "chain" %}
-{% set pathName = "The Amplification Chain" %}
-{% set questionNum = question.id %}
-{% set totalQuestions = chain_questions | length %}
-{% set questionText = question.text %}
-{% set options = question.options %}
-{% set educational = question.educational %}
-{% set context = question.context %}
-{% set isLast = question.id == totalQuestions %}

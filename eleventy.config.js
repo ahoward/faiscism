@@ -1,4 +1,15 @@
+const nunjucks = require("nunjucks");
+
 module.exports = function(eleventyConfig) {
+  // Add environment to global data
+  eleventyConfig.addGlobalData("env", process.env.ELEVENTY_ENV || "development");
+
+  // Custom filter to mark HTML as safe (not escaped)
+  eleventyConfig.addFilter("html", function(str) {
+    if (!str) return str;
+    return new nunjucks.runtime.SafeString(str);
+  });
+
   // Copy static assets
   eleventyConfig.addPassthroughCopy("site/css");
   eleventyConfig.addPassthroughCopy("site/js");
@@ -94,14 +105,15 @@ module.exports = function(eleventyConfig) {
   return {
     dir: {
       input: "site",
-      output: "_site",
+      output: "docs",
       includes: "_includes",
       layouts: "_layouts",
       data: "_data"
     },
     templateFormats: ["njk", "md", "html"],
     htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "njk"
+    markdownTemplateEngine: "njk",
+    pathPrefix: process.env.ELEVENTY_ENV === "production" ? "/faiscism/" : "/"
   };
 };
 
