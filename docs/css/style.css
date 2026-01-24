@@ -427,6 +427,7 @@ p {
 .share-hook {
   font-style: italic;
   margin-bottom: 1rem;
+  color: #ff1493;
 }
 
 .share-buttons {
