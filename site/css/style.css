@@ -395,7 +395,8 @@ p {
 .result-description {
   margin-bottom: 3rem;
   padding: 1.5rem;
-  border-left: 3px solid var(--fg);
+  border-left: 3px solid #ff1493;
+  color: #ff1493;
 }
 
 .dimensions {
