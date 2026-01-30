@@ -6,8 +6,6 @@
 (function() {
   'use strict';
 
-  // Get base path from root element data attribute or default to /
-  const BASE_PATH = document.documentElement.dataset.basePath || '/';
 
   // State management via localStorage
   const STORAGE_KEY = 'faiscism_state';
@@ -121,11 +119,11 @@
     function navigateNext() {
       if (questionNum < totalQuestions) {
         // Go to next question
-        window.location.href = `${BASE_PATH}${pathId}/${questionNum + 1}/`;
+        window.location.href = `/${pathId}/${questionNum + 1}/`;
       } else {
         // Calculate result and go to result page
         const resultCode = calculateResultCode(pathId);
-        window.location.href = `${BASE_PATH}${pathId}/result/${resultCode}/`;
+        window.location.href = `/${pathId}/result/${resultCode}/`;
       }
     }
   }

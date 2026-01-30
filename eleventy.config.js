@@ -112,8 +112,7 @@ module.exports = function(eleventyConfig) {
     },
     templateFormats: ["njk", "md", "html"],
     htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "njk",
-    pathPrefix: process.env.ELEVENTY_ENV === "production" ? "/faiscism/" : "/"
+    markdownTemplateEngine: "njk"
   };
 };
 

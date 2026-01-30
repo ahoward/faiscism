@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-base-path="{{ '/' | url }}">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,15 +20,15 @@
   <meta name="twitter:title" content="{{ resultName | default(ogTitle) | default(title) | default(site.title) }}">
   <meta name="twitter:description" content="{{ shareHook | default(ogDescription) | default(description) | default(site.description) }}">
 
-  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <main>
     {{ content | safe }}
   </main>
   <footer class="site-footer">
-    <a href="{{ '/' | url }}">← home</a>
+    <a href="/">← home</a>
   </footer>
-  <script src="{{ '/js/quiz.js' | url }}"></script>
+  <script src="/js/quiz.js"></script>
 </body>
 </html>
