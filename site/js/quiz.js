@@ -102,7 +102,11 @@
         // Show educational content if present, otherwise navigate immediately
         if (educationalPanel) {
           educationalPanel.hidden = false;
-          document.body.style.overflow = 'hidden';
+          // Add revealed class to question for arrow indicator
+          const questionText = document.querySelector('.question-text');
+          if (questionText) {
+            questionText.classList.add('revealed');
+          }
         } else {
           navigateNext();
         }
@@ -148,69 +152,18 @@
     }
   }
 
-  // Landing page - check for existing progress
-  function initLandingPage() {
-    const landing = document.querySelector('.landing');
-    if (!landing) return;
-
-    const state = getState();
-    const paths = ['chain', 'pillars', 'mirror'];
-
-    paths.forEach(pathId => {
-      const pathState = state[pathId];
-      if (pathState && pathState.answers && pathState.answers.length > 0) {
-        const card = document.querySelector(`[href="${BASE_PATH}${pathId}/"]`);
-        if (card) {
-          const progress = pathState.answers.filter(a => a !== undefined).length;
-          if (progress < 10) {
-            const indicator = document.createElement('div');
-            indicator.className = 'progress-indicator';
-            indicator.textContent = `${progress}/10 completed`;
-            card.appendChild(indicator);
-          } else {
-            const indicator = document.createElement('div');
-            indicator.className = 'progress-indicator completed';
-            indicator.textContent = '✓ Completed';
-            card.appendChild(indicator);
-          }
-        }
-      }
-    });
-  }
-
-  // Path start page - option to continue or restart
+  // Path start page - reset state when starting a quiz
   function initPathStartPage() {
     const startPage = document.querySelector('.path-start');
     if (!startPage) return;
 
     const pathId = startPage.dataset.path;
-    const pathState = getPathState(pathId);
-    const progress = pathState.answers ? pathState.answers.filter(a => a !== undefined).length : 0;
-
-    if (progress > 0 && progress < 10) {
-      const nav = startPage.querySelector('.start-nav');
-      if (nav) {
-        const continueBtn = document.createElement('a');
-        continueBtn.href = `${BASE_PATH}${pathId}/${progress + 1}/`;
-        continueBtn.className = 'btn continue';
-        continueBtn.textContent = `Continue (${progress}/10)`;
-        nav.prepend(continueBtn);
-
-        const restartBtn = document.createElement('button');
-        restartBtn.className = 'btn restart';
-        restartBtn.textContent = 'Start Over';
-        restartBtn.addEventListener('click', () => {
-          clearPathState(pathId);
-          window.location.href = `${BASE_PATH}${pathId}/1/`;
-        });
-        nav.appendChild(restartBtn);
-      }
-    }
+    // Always clear state when starting a quiz
+    clearPathState(pathId);
   }
 
   // Initialize on page load
   document.addEventListener('DOMContentLoaded', () => {
-    initLandingPage();
     initPathStartPage();
     initQuestionPage();
     initResultPage();

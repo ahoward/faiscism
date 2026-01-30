@@ -275,32 +275,20 @@ p {
   cursor: not-allowed;
 }
 
-/* Educational Panel - Inverse colors for impact */
+/* Educational Panel - Inline below selection, inverted colors */
 .educational-panel {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin-top: 2rem;
+  padding: 1.5rem;
   background: var(--reveal-bg);
   color: var(--reveal-fg);
-  padding: 2rem;
-  max-height: 70vh;
-  overflow-y: auto;
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
-}
-
-.educational-panel:not([hidden]) {
-  transform: translateY(0);
 }
 
 .educational-panel[hidden] {
-  display: block;
+  display: none;
 }
 
 .educational-content {
-  max-width: var(--max-width);
-  margin: 0 auto 1.5rem;
+  margin-bottom: 1.5rem;
   white-space: pre-line;
 }
 
@@ -318,17 +306,21 @@ p {
 .educational-content .punchline {
   background: transparent;
   color: #ff1493;
+  font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
-  padding: 1rem 0;
-  border-top: 1px dashed #ff1493;
-  border-bottom: 1px dashed #ff1493;
+  padding: 1rem 0 0;
+}
+
+.educational-content .punchline::before {
+  content: "↑ ";
 }
 
 .educational-panel .next-btn {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  display: block;
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 0.875rem;
+  font-weight: 400;
   background: var(--reveal-bg);
   color: var(--reveal-fg);
   border-color: var(--reveal-fg);
@@ -337,13 +329,6 @@ p {
 .educational-panel .next-btn:hover {
   background: var(--reveal-fg);
   color: var(--reveal-bg);
-}
-
-.educational-panel .next-btn {
-  text-transform: none;
-  letter-spacing: normal;
-  font-size: 0.875rem;
-  font-weight: 400;
 }
 
 .educational-panel .next-btn .quote {
@@ -355,9 +340,13 @@ p {
 
 .educational-panel .next-btn .arrow {
   display: block;
-  color: #ffff00;
   font-weight: 700;
   text-align: center;
+}
+
+/* Question with down arrow when revealed */
+.question-text.revealed::before {
+  content: "↓ ";
 }
 
 /* Result Page */
@@ -394,8 +383,7 @@ p {
 
 .result-description {
   margin-bottom: 3rem;
-  padding: 1.5rem;
-  border-left: 3px solid #ff1493;
+  font-size: 1.5rem;
   color: #ff1493;
 }
 
@@ -481,6 +469,23 @@ p {
 }
 
 .path-link {
+  color: var(--fg);
+}
+
+/* Footer */
+.site-footer {
+  max-width: var(--max-width);
+  margin: 2rem auto 0;
+  padding: 0 var(--spacing) var(--spacing);
+  color: var(--gray);
+}
+
+.site-footer a {
+  color: var(--gray);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
   color: var(--fg);
 }
 
